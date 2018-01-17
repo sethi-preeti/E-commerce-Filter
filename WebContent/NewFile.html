@@ -1,0 +1,25 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+.heart{  width: 20px;
+    height: 25px;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+    function change() {
+   var img1 = "images/heart.ico",
+       img2 = "images/before.png";
+   var imgElement = document.getElementById('test');
+   
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+</script>
+<img src="images/heart.ico" id="test" onclick ="change();"/>
+
+</body>
+</html>

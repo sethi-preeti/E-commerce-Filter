@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Login </title>
+<style>
+html {background-color:white;}
+h4 {
+	text-decoration:none;
+	border:0;
+	width : 200px;
+	height : 113px;
+	margin : 0;
+	padding : 0;
+	background : url(images/a.jpg) no-repeat 0 0;
+}
+ 
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4682b4;
+}
+#nav li {
+    font-family: "Courier New";
+    font-weight: bold;
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #008080;
+}
+
+#nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+h1{text-shadow: 3px 2px black; text-align: center; color: Tomato; font-family: "Times New Roman", Times, serif; font-size: 60px;}
+
+.divleft{border-radius: 20px;background-color:Violet;width: 29%;height: 29%; padding: 20px; position: relative;left: 40px;top: 200px;opacity: 0.7;}
+.name{position:absolute; left:120px; top:-40px; width: 40%;height: 35%;}
+li{padding-left: 10px;font-size: 140%;}
+.centerpic{position: absolute;top: 200px; right: 400px;}
+.divright{border-radius: 30px;background-color:LightCyan;width: 28%;height: 55%;float:right;position: absolute;right: 50px;top: 200px;z-index:-1;}
+h2{text-align: center; color: Black;font-size: 30px;}
+.user{position:absolute;right:330px;top:230px;}
+.pass{position:absolute;right:330px;top:290px;}
+input[type=password]{width:80%;height:10%;border-radius: 20px;background-color:LightGray;position:absolute;right:20px;top:200px;background-image: url("images/user.png");background-position:10px;background-repeat: no-repeat;padding-left: 40px;}
+input[type=text]{width:80%;height:10%;border-radius: 20px;background-color:LightGray;position:absolute;right:20px;top:150px;background-image: url("images/password.png");background-position: 10px;background-repeat: no-repeat;padding-left: 40px;}
+input[type=submit]{position:absolute;right:130px;top:250px;width:30%;height:10%;border-radius: 20px;background-color:LightGray}
+h3{position:absolute;right:60px;top:290px;}
+.footer{position:absolute;bottom:0px;left:0px;width:95%;height:2.5%;background-color:rgb(0, 40, 77);text-align:center;color:white;font-size:11px;padding-top:3px;}
+</style>
+</head>
+<body>
+<h4></h4>
+<div id="nav">
+<ul>
+  <li><a href="http://localhost:8080/SE/home.jsp">Home</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">About Us</a>
+    <div id="nav1" class="dropdown-content">
+      <a>Comfort Shopping <br/> is a small company <br/> based in Noida</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Contact</a>
+    <div id="nav1" class="dropdown-content">
+      <a>Email: <br/> support@comfortshopping.com <br/> Phone: <br/> 12345678</a>
+    </div>
+  </li>
+  <li><a href="http://localhost:8080/SE/login.html">Login</a></li>
+</ul>
+</div>
+
+<div class = "divleft">
+<img class = "name" src="images/name.png"></img>
+<ul>
+<li> Easiest way to shop online</li>
+<li> Display results from top websites </li>
+<li> Let you apply filters of your choice</li>
+<li> Keep your account details safe</li>
+<li> Gives utmost priority to customer<br />satisfaction </li>
+</ul>
+</div>
+<img class= "centerpic" src="images/picture.png"></img>
+<div class="divright">
+<h2>Enter Login Details</h2>
+<form action="loggedin" method="post">
+<input type= "password"  name="pass" class="pass" placeholder="                        password">
+<input type = "text"  name="user"  class="user" placeholder="                         username">
+<br />
+<input name="login" type="submit" value="LOGIN">
+</form>
+<h3><a href="http://localhost:8080/SE/signup.html?name=&user=&pass=&email=">Not a member at Comfortshop yet?</a></h3>
+</div>
+<div class="footer"> created as a part of Software Engineering Project</div>
+</body>
+</html>
